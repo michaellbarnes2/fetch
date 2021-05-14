@@ -1,8 +1,8 @@
 #Michael Barnes
 
-import yaml
-import time
+
 import boto3
+import yaml
 
 
 
@@ -79,7 +79,6 @@ for x in range(numofvolumes):
     gbsize = (str(b['size_gb']))
     voltype = (str(b['type']))
     mount = (str(b['mount']))
-    time.sleep(3)
     newlist = [device, gbsize, voltype, mount]
 
 
